@@ -38,9 +38,9 @@ print("Test Accuracy: ", round(test_acc * 100, 2), "%")
 
 #PREDICT EXAMPLE
 
-prediction = model.predict(X_test[:1])
+prediction = model.predict(X_test[5:6])
 predicted_label = prediction.argmax()
-plt.imshow(X_test[0].reshape(28,28), cmap="gray")
+plt.imshow(X_test[5].reshape(28,28), cmap="gray")
 plt.title("Prediction: "+ str(predicted_label))
 plt.axis("off")
 plt.show()
